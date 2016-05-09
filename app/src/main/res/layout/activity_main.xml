@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="juanpablomanzano.cotizapp2.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sfiMiIndicadorRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp">
+            <ListView
+                android:id="@+id/lstMiLista"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lista_height">
+
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <Button
+            android:id="@+id/btnMiBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ingresar"
+            android:theme="@style/MiRaisedButton"
+            android:onClick="accesar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            android:id="@+id/fabMifab"
+            android:layout_alignBottom="@+id/sfiMiIndicadorRefresh"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/card_medida"
+            android:layout_height="20dp"
+            android:layout_below="@id/fabMifab"
+            card_view:cardCornerRadius="4dp"
+            android:id="@+id/view">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tvTituloCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_tarjeta"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Inicio de sesión</string>
+    <string name="btn_ingresar">INGRESAR</string>
+    <string name="name">Name</string>
+    <string name="add_favorite">Favorito</string>
+    <string name="texto_accion">Acción</string>
+    <string-array name="ejecutivos">
+       <item>Juan Pablo Manzano</item>
+        <item>Duarte </item>
+        <item>Luisa Calderon</item>
+        <item>Margarita Flores Vazquez</item>
+        <item>Fernando Castillo</item>
+    </string-array>
+    <string name="titulo_tarjeta">Contacto</string>
+    <string name="contacto">Seleccione a su ejecutivo</string>
+</resources>

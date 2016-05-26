@@ -12,7 +12,7 @@ public class MenuPrincipal extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.principal_menu);
-
     }
+
 
 }

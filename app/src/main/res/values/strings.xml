@@ -4,6 +4,8 @@
     <string name="name">Name</string>
     <string name="add_favorite">Favorito</string>
     <string name="texto_accion">Acción</string>
+    <string name="bienvenida">Bienvenidos a CotizApp</string>
+    <string name="ingresar_sistema">Pulse en INGRESAR para iniciar</string>
     <string-array name="ejecutivos">
        <item>Juan Pablo Manzano</item>
         <item>Duarte </item>

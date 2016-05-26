@@ -9,4 +9,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="juanpablomanzano.cotizapp2.contacto">
 
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+        android:id="@+id/fabMifab"
+        android:layout_alignBottom="@+id/sfiMiIndicadorRefresh"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|right"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sfiMiIndicadorRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp">
+        <ListView
+            android:id="@+id/lstMiLista"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lista_height">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
 </RelativeLayout>

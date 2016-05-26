@@ -10,23 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="juanpablomanzano.cotizapp2.MainActivity">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/sfiMiIndicadorRefresh"
+        <ImageView
+            android:id="@+id/imvLogoGrupoLorca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="200dp">
-            <ListView
-                android:id="@+id/lstMiLista"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/lista_height">
-
-            </ListView>
-        </android.support.v4.widget.SwipeRefreshLayout>
+            android:src="@drawable/logogrupolorca"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
 
         <Button
             android:id="@+id/btnMiBoton"
@@ -34,26 +32,46 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_ingresar"
             android:theme="@style/MiRaisedButton"
-            android:onClick="accesar"
+            android:onClick="iniciarCotizapp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvBienvenida"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-            android:id="@+id/fabMifab"
-            android:layout_alignBottom="@+id/sfiMiIndicadorRefresh"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:text="@string/bienvenida"
+            android:layout_below="@id/imvLogoGrupoLorca"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp"
+            android:textSize="@dimen/bienvenida"/>
 
+        <TextView
+            android:id="@+id/tvIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ingresar_sistema"
+            android:textSize="@dimen/titulo_dos"
+            android:layout_below="@+id/tvBienvenida"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp" />
+
+        <!-->
         <android.support.v7.widget.CardView
             android:layout_width="@dimen/card_medida"
-            android:layout_height="20dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/fabMifab"
             card_view:cardCornerRadius="4dp"
-            android:id="@+id/view">
+            android:id="@+id/view"
+            android:layout_above="@+id/btnMiBoton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorFondo">
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -61,11 +79,30 @@
 
 
                 <TextView
-                    android:id="@+id/tvTituloCardView"
+                    android:id="@+id/tvTituloTarjeta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/titulo_tarjeta"
-                    />
+                    android:textStyle="bold"
+                    android:textSize="@dimen/card_titulo"/>
+
+                <TextView
+                    android:id="@+id/tvContenido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacto"
+                    android:layout_below="@+id/tvTituloTarjeta"
+                    android:layout_alignBottom="@+id/ivCardView"
+                    android:background="@color/colorFondo" />
+
+                <ImageView
+                    android:id="@+id/ivCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/seguro_de_automoviles"
+                    android:scaleType="centerCrop"
+                    android:layout_toRightOf="@+id/tvContenido"
+                    android:layout_toEndOf="@+id/tvContenido" />
 
             </RelativeLayout>
 
@@ -73,9 +110,7 @@
 
         </android.support.v7.widget.CardView>
 
-
-
-
+        <-->
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
